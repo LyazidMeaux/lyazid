@@ -1,0 +1,5 @@
+https://data.oecd.org/fr/api/
+
+https://docs.python.org/fr/dev/library/json.html
+
+https://docs.python.org/2/library/json.html
