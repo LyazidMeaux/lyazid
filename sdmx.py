@@ -13,7 +13,7 @@ log = logging.getLogger("SDMX")
 if __name__ == '__main__':
     # Gestion des log
     ligne = '%(asctime)s %(levelname)s %(message)s'
-    #logging.basicConfig(level=logging.DEBUG,format=ligne)
+    # logging.basicConfig(level=logging.DEBUG,format=ligne)
     log_filename = './log/debug.txt'
     file_handler = logging.FileHandler(log_filename,mode="w")
     format = '%(asctime)s %(levelname)s %(message)s',
@@ -28,7 +28,6 @@ if __name__ == '__main__':
     fichier = root + "compact.xml"
     fichier = root + "data.xml"
     fichier = root + "query.xml"
-    fichier = root + "indice.xml"
 
     fichier = root + "indice.xml"
 
@@ -40,6 +39,8 @@ if __name__ == '__main__':
 
     data = convert_xml_to_dict(fichier)
     show_data_sdmx_ml(data)
+
+    # On ferme le fichier de log
     file_handler.close()
 
 def convert_xml_to_json(xml_file, xml_attribs=True):
