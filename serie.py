@@ -67,3 +67,6 @@ class Serie:
             return False
 
         return True
+
+    def __str__(self):
+        return self.qualification.__str__()

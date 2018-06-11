@@ -55,7 +55,7 @@ def convert_xml_to_dict(xml_file, xml_attribs=True):
 
 
 
-# Different type d'entete
+# Differents types d'entete
 entete_xml = ["message:MessageGroup","message:CompactData","message:QueryMessage"]
 
 def show_data_sdmx_ml(data):
@@ -78,28 +78,22 @@ def show_data_sdmx_ml(data):
             continue
         # ou ceil = valeurs[entete]
         #afficher_dictionnaire(branche,entete)
-
+        print ("SDMX de type: <{}>".format(entete))
         for key in branche:
             feuille = branche.get(key)
-            if (str(key).startswith("@")):continue
+            if (str(key).startswith("@")):
+                continue
             print ("Feuille: {}".format(key))
 
             bloc = str(key)
             if (bloc.lower()=="dataset"):
                 dataset = dict(feuille)
                 extract_dataset(dataset)
-            #afficher_dictionnaire(feuille, str(key))
 
-        #header = branche.get("Header")
-        #dataset = branche.get("DataSet")
-        #structure = valeurs.get("structure")
-
-        #afficher_dictionnaire(header, "header")
-        #afficher_dictionnaire(dataset, "Dataset")
-
-        #afficher_dictionnaire(structure,"structure")
 
 def extract_dataset(dataset):
+    """Extrait les series d'un dataset de type MessageGroup
+    """
     if type(dataset) is dict or type(dataset) is collections.OrderedDict:
         pass
     else:
@@ -110,6 +104,9 @@ def extract_dataset(dataset):
     dico = dict(dataset)
     uri = dico["@keyFamilyURI"]
     family = dico["KeyFamilyRef"]
+    print("Family {}".format(family))
+
+    liste_series = []
     series = dico["Series"]
     dataset_key = dico["Series"][:]
     for item in dataset_key:
@@ -117,19 +114,17 @@ def extract_dataset(dataset):
         #afficher_cle_dictionnaire(detail)
         series_key = detail["SeriesKey"] # dict
         attributes = detail["Attributes"] # dict
-
         obs = detail ["Obs"] # list
+
 
         serie = Serie(series_key,attributes,obs)
         if serie.show() is False:
             print(detail)
-
-
-
-    #print ("URI {} Family {}".format(uri,family))
-
+        liste_series.append(serie)
+        print ("Serie: {}".format(serie))
 
     print("---")
+    return liste_series
 
 def exemple_variable():
     print ("Analyse Fichier")

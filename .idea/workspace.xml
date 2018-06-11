@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8cc3d083-f5c6-4fd0-a90a-19e986002dca" name="Default" comment="" />
+    <list default="true" id="8cc3d083-f5c6-4fd0-a90a-19e986002dca" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdmx.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdmx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serie.py" beforeDir="false" afterPath="$PROJECT_DIR$/serie.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +22,8 @@
       <file leaf-file-name="sdmx.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sdmx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="19">
+              <caret line="94" column="8" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -29,8 +34,8 @@
       <file leaf-file-name="serie.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serie.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1273">
-              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+            <state relative-caret-position="192">
+              <caret line="71" column="43" lean-forward="true" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
               <folding>
                 <element signature="e#24#42#0" expanded="true" />
               </folding>
@@ -75,6 +80,7 @@
       <find>logger</find>
       <find>print</find>
       <find>show__data_sdmx_json</find>
+      <find>feuil</find>
     </findStrings>
     <replaceStrings>
       <replace>convert_xml_to_json</replace>
@@ -101,7 +107,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-20" />
     <option name="y" value="5" />
     <option name="width" value="1045" />
@@ -283,22 +289,22 @@
     <frame x="-7" y="-7" width="1166" height="694" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49326146" visible="true" weight="0.18600531" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3291367" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50044286" side_tool="true" weight="0.2967626" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49955714" weight="0.20216607" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32851985" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.5215827" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49326146" visible="true" weight="0.13108946" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.3291367" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50044286" side_tool="true" weight="0.2967626" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32851985" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.5215827" />
+      <window_info active="true" anchor="bottom" x="321" y="424" width="1129" height="88" id="Run" order="10" sideWeight="0.49955714" side_tool="true" visible="true" weight="0.3537906" />
       <window_info id="Structure" order="1" sideWeight="0.50673854" side_tool="true" weight="0.18246235" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3291367" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.16726619" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3291367" />
       <window_info id="Favorites" order="2" sideWeight="0.5030675" side_tool="true" weight="0.16297609" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.16726619" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24954791" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291367" />
     </layout>
   </component>
@@ -318,6 +324,36 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sdmx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+          <folding>
+            <element signature="e#24#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/Lib/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20102">
+          <caret line="1058" selection-start-line="1058" selection-end-line="1058" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/sdmx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -607,8 +643,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/serie.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
-          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        <state relative-caret-position="192">
+          <caret line="71" column="43" lean-forward="true" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
           <folding>
             <element signature="e#24#42#0" expanded="true" />
           </folding>
@@ -617,8 +653,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sdmx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="19">
+          <caret line="94" column="8" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
